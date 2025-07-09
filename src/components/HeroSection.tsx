@@ -1,0 +1,108 @@
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Award, Shield, Users } from "lucide-react";
+import leadLawyerImage from "@/assets/lead-lawyer.jpg";
+
+const HeroSection = () => {
+  return (
+    <section id="home" className="relative min-h-screen flex items-center pt-20">
+      {/* Background */}
+      <div className="absolute inset-0 law-gradient-bg"></div>
+      <div className="absolute inset-0 bg-black/20"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Content */}
+          <div className="text-white">
+            <Badge className="bg-law-gold text-primary mb-6 text-sm font-medium px-4 py-2 animate-fade-in">
+              Renowned Law Firm in Bangladesh
+            </Badge>
+            
+            <h1 className="hero-text text-white mb-6 animate-fade-in">
+              Trusted Legal Partner for Over 30 Years
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed animate-fade-in">
+              Comprehensive Legal Expertise, Nationwide Reach. With expertise in the Supreme Court, 
+              District Courts, and Tribunals, both in Dhaka and beyond, Law Valley provides effective 
+              legal solutions tailored to support your business growth and stability.
+            </p>
+
+            {/* Stats */}
+            <div className="flex flex-wrap gap-8 mb-8">
+              <div className="flex items-center space-x-3">
+                <div className="p-3 bg-white/10 rounded-full backdrop-blur-sm">
+                  <Award className="h-6 w-6 text-law-gold" />
+                </div>
+                <div>
+                  <div className="text-2xl font-bold">30+</div>
+                  <div className="text-white/80">Years Experience</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <div className="p-3 bg-white/10 rounded-full backdrop-blur-sm">
+                  <Users className="h-6 w-6 text-law-gold" />
+                </div>
+                <div>
+                  <div className="text-2xl font-bold">1000+</div>
+                  <div className="text-white/80">Cases Won</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <div className="p-3 bg-white/10 rounded-full backdrop-blur-sm">
+                  <Shield className="h-6 w-6 text-law-gold" />
+                </div>
+                <div>
+                  <div className="text-2xl font-bold">100%</div>
+                  <div className="text-white/80">Client Trust</div>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" className="bg-law-gold hover:bg-law-gold-dark text-primary font-semibold px-8 py-4">
+                Book Consultation
+              </Button>
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4">
+                Meet Our Lawyers
+              </Button>
+            </div>
+          </div>
+
+          {/* Lead Lawyer Image */}
+          <div className="relative">
+            <div className="relative">
+              <img
+                src={leadLawyerImage}
+                alt="Lead Advocate - Law Valley"
+                className="rounded-2xl shadow-2xl w-full max-w-lg mx-auto"
+              />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/30 to-transparent"></div>
+            </div>
+            
+            {/* Lawyer Info Card */}
+            <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-6 animate-scale-in">
+              <h3 className="text-xl font-bold text-primary mb-2">Mr. Ahsanul Karim</h3>
+              <p className="text-muted-foreground mb-3">Barrister-at-Law, Head of Chamber</p>
+              <div className="flex items-center space-x-4 text-sm">
+                <span className="flex items-center space-x-1">
+                  <Award className="h-4 w-4 text-law-gold" />
+                  <span>Supreme Court Advocate</span>
+                </span>
+                <span className="flex items-center space-x-1">
+                  <Shield className="h-4 w-4 text-law-gold" />
+                  <span>30+ Years Experience</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
