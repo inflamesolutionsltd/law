@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-white">
-            <Badge className="bg-law-gold text-primary mb-6 text-sm font-medium px-4 py-2 animate-fade-in transition duration-300 hover:bg-white hover:scale-105 hover:border hover:border-law-gold">
+            <Badge className=" bg-law-gold text-primary mb-6 text-sm font-medium px-4 py-2 animate-fade-in transition duration-300 hover:bg-white hover:scale-105 hover:border hover:border-law-gold">
               Renowned Law Firm in Bangladesh
             </Badge>
 
@@ -65,10 +65,10 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-law-gold hover:bg-law-gold-dark text-primary font-semibold px-8 py-4">
+              <Button size="lg" className="hover-scale bg-law-gold hover:bg-law-gold-dark text-primary font-semibold px-8 py-4">
                 Book Consultation
               </Button>
-              <Button size="lg" className="bg-white hover:bg-law-gold-dark text-primary font-semibold px-8 py-4">
+              <Button size="lg" className="hover-scale bg-white hover:bg-law-gold-dark text-primary font-semibold px-8 py-4">
                 Meet Our Lawyers
               </Button>
             </div>

@@ -105,7 +105,7 @@ const ServicesSection = () => {
             <Button size="lg" className="bg-law-gold hover:bg-law-gold-dark text-primary font-semibold px-8 hover-scale">
               Contact Us
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 hover-scale">
+            <Button size="lg" variant="outline" className="border-2 border-white text-primary hover:bg-white hover:text-primary px-8 hover-scale">
               View All Services
             </Button>
           </div>
