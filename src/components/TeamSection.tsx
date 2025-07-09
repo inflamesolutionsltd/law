@@ -8,36 +8,38 @@ import lawyer3Image from "@/assets/lawyer-3.jpg";
 const TeamSection = () => {
   const team = [
     {
-      name: "Barrister Rahman Ahmed",
-      position: "Senior Partner & Lead Advocate",
+      name: "Mr. Kabir Iqbal Hossain",
+      position: "Senior Associate, Advocate Supreme Court of Bangladesh",
       image: leadLawyerImage,
       experience: "30+ Years",
-      specialization: ["Corporate Law", "Supreme Court", "International Law"],
-      email: "rahman@lawvalley.com",
+      specialization: ["Constitutional Law", "Civil Litigation", "Legal Consultancy"],
+      email: "kabir@lawvalley.com",
       phone: "+880 123 456-7890",
-      description: "Leading legal expert with extensive experience in corporate law and Supreme Court advocacy."
+      description: "Experienced advocate specializing in civil litigation and Supreme Court cases."
     },
     {
-      name: "Advocate Fatima Khatun",
-      position: "Partner - Criminal & Family Law",
+      name: "Mr. Aminul Hoque",
+      position: "Senior Associate, Advocate, Appellate Division Supreme Court of Bangladesh",
       image: lawyer2Image,
       experience: "15+ Years",
-      specialization: ["Criminal Defense", "Family Law", "Women's Rights"],
-      email: "fatima@lawvalley.com",
+      specialization: ["Appellate Advocacy", "Criminal Law", "Writ Matters"],
+      email: "aminul@lawvalley.com",
       phone: "+880 123 456-7891",
-      description: "Dedicated advocate specializing in criminal defense and family law matters."
+      description: "Senior legal expert handling complex appeals and constitutional matters in the Appellate Division."
     },
     {
-      name: "Advocate Mahbub Hassan",
-      position: "Senior Associate - Tax & Corporate",
+      name: "Mr. Tanveer Hossain Khan",
+      position: "Senior Associate, Advocate, Appellate Division Supreme Court of Bangladesh",
       image: lawyer3Image,
-      experience: "12+ Years",
-      specialization: ["Tax Law", "Corporate Advisory", "Arbitration"],
-      email: "mahbub@lawvalley.com",
+      experience: "15+ Years",
+      specialization: ["Constitutional Law", "Company Law", "Appellate Advocacy"],
+      email: "tanveer@lawvalley.com",
       phone: "+880 123 456-7892",
-      description: "Expert in tax law and corporate advisory with a track record of successful arbitrations."
+      description: "Distinguished appellate lawyer with deep expertise in constitutional and company law."
     }
   ];
+
+
 
   return (
     <section id="team" className="py-20 bg-background">
