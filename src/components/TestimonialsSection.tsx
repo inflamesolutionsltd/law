@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Star, Quote } from "lucide-react";
+import ClientSlider from "./ClientSlider";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -27,13 +28,7 @@ const TestimonialsSection = () => {
     }
   ];
 
-  const clients = [
-    "Reckitt Benckiser",
-    "Beximco",
-    "United Group", 
-    "Youngone",
-    "Runner Automobiles"
-  ];
+
 
   return (
     <section className="py-20 bg-gradient-subtle">
@@ -84,16 +79,7 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Our Clients Section */}
-        <div id="clients" className="text-center mb-16 animate-fade-in">
-          <h3 className="text-2xl font-bold text-primary mb-8">Our Clients</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            {clients.map((client, index) => (
-              <div key={index} className="text-lg font-medium text-primary hover:opacity-100 transition-opacity duration-300">
-                {client}
-              </div>
-            ))}
-          </div>
-        </div>
+        <ClientSlider></ClientSlider>
 
         {/* Stats Section */}
         <div className="bg-law-cream rounded-2xl p-12 animate-fade-in">

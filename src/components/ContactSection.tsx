@@ -215,28 +215,41 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* Map Section */}
         <div className="mt-16">
-          <Card className="card-elegant overflow-hidden">
-            <CardContent className="p-0">
-              <div className="bg-muted p-8 text-center">
-                <h3 className="text-2xl font-bold text-primary mb-4">Visit Our Office</h3>
-                <p className="text-muted-foreground mb-6">
-                  Located in the heart of Gulshan, Dhaka - easily accessible by all major transportation routes.
-                </p>
-                <div className="h-64 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="h-12 w-12 text-law-gold mx-auto mb-4" />
-                    <p className="text-primary font-medium">Interactive Map</p>
-                    <p className="text-muted-foreground text-sm">
-                      Satarkul Sky View Tower, B-8/B, Block-B, Dhaka-1212
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+  <Card className="card-elegant overflow-hidden">
+    <CardContent className="p-0">
+      <div className="bg-muted p-8 text-center">
+        <h3 className="text-2xl font-bold text-primary mb-4">Visit Our Office</h3>
+        <p className="text-muted-foreground mb-6">
+          Located in the heart of Gulshan, Dhaka – easily accessible by all major transportation routes.
+        </p>
+
+        {/* Embedded Google Map */}
+        <div className="rounded-lg overflow-hidden aspect-[3/1]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.343157937044!2d90.40767912439107!3d23.73513938936376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8f44d23a501%3A0x9729423fe7e27ee0!2sLaw%20Valley%20%7C%20Law%20Firm%20In%20Dhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1752044367977!5m2!1sen!2sbd"
+            className="w-full h-full border-0"
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
+
+        <div className="text-center mt-6">
+          <MapPin className="h-12 w-12 text-law-gold mx-auto mb-2" />
+          <p className="text-primary font-medium">Law Valley | Law Firm in Dhaka</p>
+          <p className="text-muted-foreground text-sm">
+            Satarkul Sky View Tower, B-8/B, Block-B, Dhaka-1212
+          </p>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+</div>
+
+
+        
+        
       </div>
     </section>
   );

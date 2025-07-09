@@ -98,44 +98,48 @@ const Footer = () => {
             </div>
 
             {/* Contact Info */}
-            <div>
-              <h3 className="text-xl font-bold mb-6 text-law-gold">Contact Information</h3>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <MapPin className="h-5 w-5 text-law-gold mt-1 flex-shrink-0" />
-                  <div className="text-white/80">
-                    <p>Gulshan Tower, Level 12</p>
-                    <p>Road 135, Gulshan-1</p>
-                    <p>Dhaka-1212, Bangladesh</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-law-gold" />
-                  <div className="text-white/80">
-                    <p>+880 123 456-7890</p>
-                    <p>+880 987 654-3210</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-law-gold" />
-                  <div className="text-white/80">
-                    <p>info@lawvalley.com</p>
-                    <p>consultation@lawvalley.com</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-3">
-                  <Clock className="h-5 w-5 text-law-gold mt-1" />
-                  <div className="text-white/80">
-                    <p>Mon - Fri: 9:00 AM - 7:00 PM</p>
-                    <p>Saturday: 10:00 AM - 4:00 PM</p>
-                    <p className="text-law-gold">Emergency: 24/7</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+                {/* Contact Info */}
+<div>
+  <h3 className="text-xl font-bold mb-6 text-law-gold">Contact Information</h3>
+  <div className="space-y-4">
+    <div className="flex items-start space-x-3">
+      <MapPin className="h-5 w-5 text-law-gold mt-1 flex-shrink-0" />
+      <div className="text-white/80">
+        <p>Saiham Sky View Tower 195,</p>
+        <p>Shahid Syed Nazrul Islam Sarani</p>
+        <p>Suite No. 11A (11th Floor)</p>
+        <p>45 Bijoy Nagor</p>
+        <p>Dhaka – 1000, Bangladesh</p>
+      </div>
+    </div>
+
+    <div className="flex items-center space-x-3">
+      <Phone className="h-5 w-5 text-law-gold" />
+      <div className="text-white/80">
+        <p>+880-2222-26013</p>
+        <p>+880-1915-964722</p>
+      </div>
+    </div>
+
+    <div className="flex items-center space-x-3">
+      <Mail className="h-5 w-5 text-law-gold" />
+      <div className="text-white/80">
+        <p>lawvalley@gmail.com</p>
+        <p>info@lawvalley.com.bd</p>
+      </div>
+    </div>
+
+    <div className="flex items-start space-x-3">
+      <Clock className="h-5 w-5 text-law-gold mt-1" />
+      <div className="text-white/80">
+        <p>Mon - Fri: 9:00 AM - 7:00 PM</p>
+        <p>Saturday: 10:00 AM - 4:00 PM</p>
+        <p className="text-law-gold">Emergency: 24/7</p>
+      </div>
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
 
