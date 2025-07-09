@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import logo from '/law_img/logo.png';
 
 const Footer = () => {
   const quickLinks = [
@@ -37,7 +38,7 @@ const Footer = () => {
             <div className="space-y-6">
               <div>
                 <img
-                  src="/law_img/.png"
+                  src={logo}
                   alt="Law Valley Logo"
                   className="h-16 w-auto mb-4 brightness-0 invert"
                 />
