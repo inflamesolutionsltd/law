@@ -85,21 +85,22 @@ const HeroSection = () => {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/30 to-transparent"></div>
             </div>
             
-            {/* Lawyer Info Card */}
-            <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-6 animate-scale-in">
-              <h3 className="text-xl font-bold text-primary mb-2">Mr. Ahsanul Karim</h3>
-              <p className="text-muted-foreground mb-3">Barrister-at-Law, Head of Chamber</p>
-              <div className="flex items-center space-x-4 text-sm">
-                <span className="flex items-center space-x-1">
-                  <Award className="h-4 w-4 text-law-gold" />
-                  <span>Supreme Court Advocate</span>
-                </span>
-                <span className="flex items-center space-x-1">
-                  <Shield className="h-4 w-4 text-law-gold" />
-                  <span>30+ Years Experience</span>
-                </span>
-              </div>
-            </div>
+        {/* Lawyer Info Card */}
+        <div className="absolute bottom-6 left-6 right-6 bg-white/20 backdrop-blur-md rounded-xl p-6 animate-scale-in shadow-lg">
+          <h3 className="text-xl font-bold text-white mb-2 drop-shadow-md">Mr. Ahsanul Karim</h3>
+          <p className="text-white mb-3 drop-shadow-sm">Barrister-at-Law, Head of Chamber</p>
+          <div className="flex items-center space-x-4 text-sm text-white drop-shadow-sm">
+            <span className="flex items-center space-x-1">
+              <Award className="h-4 w-4 text-law-gold drop-shadow" />
+              <span>Supreme Court Advocate</span>
+            </span>
+            <span className="flex items-center space-x-1">
+              <Shield className="h-4 w-4 text-law-gold drop-shadow" />
+              <span>30+ Years Experience</span>
+            </span>
+          </div>
+        </div>
+
           </div>
         </div>
       </div>

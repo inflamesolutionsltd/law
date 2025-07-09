@@ -72,11 +72,7 @@ const ContactSection = () => {
       title: "Email Addresses",
       details: ["lawvalleyfirm@gmail.com", "info@lawvalley.com.bd", "www.lawvalley.com.bd"]
     },
-    {
-      icon: Clock,
-      title: "Office Hours",
-      details: ["Sat - Thu: 10am to 8pm", "Friday: Closed", "Emergency: 24/7 Available"]
-    }
+    
   ];
 
   return (
