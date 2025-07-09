@@ -6,38 +6,54 @@ import lawyer2Image from "@/assets/lawyer-2.jpg";
 import lawyer3Image from "@/assets/lawyer-3.jpg";
 
 const TeamSection = () => {
-  const team = [
-    {
-      name: "Mr. Kabir Iqbal Hossain",
-      position: "Senior Associate, Advocate Supreme Court of Bangladesh",
-      image: leadLawyerImage,
-      experience: "30+ Years",
-      specialization: ["Constitutional Law", "Civil Litigation", "Legal Consultancy"],
-      email: "kabir@lawvalley.com",
-      phone: "+880 123 456-7890",
-      description: "Experienced advocate specializing in civil litigation and Supreme Court cases."
-    },
-    {
-      name: "Mr. Aminul Hoque",
-      position: "Senior Associate, Advocate, Appellate Division Supreme Court of Bangladesh",
-      image: lawyer2Image,
-      experience: "15+ Years",
-      specialization: ["Appellate Advocacy", "Criminal Law", "Writ Matters"],
-      email: "aminul@lawvalley.com",
-      phone: "+880 123 456-7891",
-      description: "Senior legal expert handling complex appeals and constitutional matters in the Appellate Division."
-    },
-    {
-      name: "Mr. Tanveer Hossain Khan",
-      position: "Senior Associate, Advocate, Appellate Division Supreme Court of Bangladesh",
-      image: lawyer3Image,
-      experience: "15+ Years",
-      specialization: ["Constitutional Law", "Company Law", "Appellate Advocacy"],
-      email: "tanveer@lawvalley.com",
-      phone: "+880 123 456-7892",
-      description: "Distinguished appellate lawyer with deep expertise in constitutional and company law."
-    }
-  ];
+const team = [
+  {
+    name: "Mr. Ahsanul Karim",
+    position: "Head of Chamber, Senior Advocate, Supreme Court of Bangladesh",
+    image: leadLawyerImage,
+    experience: "30+ Years",
+    specialization: [
+      "Company Law",
+      "Revenue Matters",
+      "Banking and Finance",
+  
+    ],
+    email: "ahsanul.karim@lawvalley.com.bd",
+    phone: "+8801711-544615",
+    description: "Senior Advocate with deep expertise in corporate, banking, and international arbitration matters."
+  },
+  {
+    name: "Mr. Aminul Hoque",
+    position: "Senior Associate, Advocate, Appellate Division Supreme Court of Bangladesh",
+    image: lawyer2Image,
+    experience: "15+ Years",
+    specialization: [
+      "Admiralty Law",
+      "Shipping Law",
+      "Criminal Law",
+      "Anti-Corruption Laws",
+    ],
+    email: "aminul@lawvalley.com",
+    phone: "+880 123 456-7891",
+    description: "Specialist in admiralty, criminal, and anti-corruption law with 15+ years of appellate experience."
+  },
+  {
+    name: "Mr. Tanveer Hossain Khan",
+    position: "Senior Associate, Advocate, Appellate Division Supreme Court of Bangladesh",
+    image: lawyer3Image,
+    experience: "15+ Years",
+    specialization: [
+      "Land Laws",
+      "Banking Law",
+      "Company and Commercial Law",
+      "Property Law",
+    ],
+    email: "tanveer@lawvalley.com",
+    phone: "+8801732-728555",
+    description: "Experienced in land, property, and commercial law with strong litigation and vetting expertise."
+  }
+];
+
 
 
 
@@ -48,7 +64,7 @@ const TeamSection = () => {
         <div className="text-center mb-16">
           <h2 className="section-heading text-primary">Meet Our Legal Team</h2>
           <p className="text-elegant max-w-3xl mx-auto">
-            Our distinguished team of legal professionals brings decades of combined experience 
+            Our distinguished team of legal professionals brings decades of combined experience
             and expertise to serve your legal needs with excellence.
           </p>
         </div>
@@ -66,17 +82,17 @@ const TeamSection = () => {
                     className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  
+
                   {/* Hover Contact Info */}
                   <div className="absolute bottom-4 left-4 right-4 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                     <div className="flex space-x-2">
-                      <a 
+                      <a
                         href={`mailto:${member.email}`}
                         className="p-2 bg-white/90 rounded-full hover:bg-law-gold transition-colors"
                       >
                         <Mail className="h-4 w-4 text-primary" />
                       </a>
-                      <a 
+                      <a
                         href={`tel:${member.phone}`}
                         className="p-2 bg-white/90 rounded-full hover:bg-law-gold transition-colors"
                       >
@@ -95,19 +111,19 @@ const TeamSection = () => {
                       <span>{member.experience}</span>
                     </Badge>
                   </div>
-                  
+
                   <p className="text-muted-foreground font-medium mb-3">{member.position}</p>
                   <p className="text-sm text-muted-foreground mb-4">{member.description}</p>
-                  
+
                   {/* Specializations */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {member.specialization.map((spec, specIndex) => (
-                      <Badge key={specIndex} variant="outline" className="text-xs">
+                      <Badge key={specIndex} variant="default" className="text-xs">
                         {spec}
                       </Badge>
                     ))}
                   </div>
-                  
+
                   {/* Contact Info */}
                   <div className="space-y-2 text-sm text-muted-foreground">
                     <div className="flex items-center space-x-2">

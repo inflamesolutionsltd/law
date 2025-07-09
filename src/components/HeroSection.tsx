@@ -14,9 +14,11 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-white">
-            <Badge className="bg-law-gold text-primary mb-6 text-sm font-medium px-4 py-2 animate-fade-in">
+            <Badge className="bg-law-gold text-primary mb-6 text-sm font-medium px-4 py-2 animate-fade-in transition duration-300 hover:bg-white hover:scale-105 hover:border hover:border-law-gold">
               Renowned Law Firm in Bangladesh
             </Badge>
+
+
             
             <h1 className="hero-text text-white mb-6 animate-fade-in">
               Trusted Legal Partner for Over 30 Years
@@ -66,7 +68,7 @@ const HeroSection = () => {
               <Button size="lg" className="bg-law-gold hover:bg-law-gold-dark text-primary font-semibold px-8 py-4">
                 Book Consultation
               </Button>
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4">
+              <Button size="lg" className="bg-white hover:bg-law-gold-dark text-primary font-semibold px-8 py-4">
                 Meet Our Lawyers
               </Button>
             </div>
