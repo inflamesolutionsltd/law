@@ -53,27 +53,36 @@ const ContactSection = () => {
   };
 
   const contactInfo = [
-    {
-      icon: MapPin,
-      title: "Office Address",
-      details: [
-        "Satarkul Sky View Tower (3rd FL, North Signal Road, Natun Bazar Signal)",
-        "Satarkul Sky View Tower, B-8/B, Block-B", 
-        "Dhaka - 1212, Bangladesh"
-      ]
-    },
-    {
-      icon: Phone,
-      title: "Phone Numbers",
-      details: ["+880-16022-36975", "+880-17982-98777", "Emergency: 24/7 Available"]
-    },
-    {
-      icon: Mail,
-      title: "Email Addresses",
-      details: ["lawvalleyfirm@gmail.com", "info@lawvalley.com.bd", "www.lawvalley.com.bd"]
-    },
-    
-  ];
+  {
+    icon: MapPin,
+    title: "Office Address",
+    details: [
+      "Saiham Sky View Tower, 195 Shahid Syed Nazrul Islam Sarani",
+      "Suite No. 11A (11th Floor), 45 Bijoy Nagar",
+      "Dhaka – 1000, Bangladesh"
+    ]
+  },
+  {
+    icon: Phone,
+    title: "Phone Numbers",
+    details: [
+      "+880-2222-26013",
+      "+880-16022-36975",
+      "+880-17982-98777",
+      "Emergency: 24/7 Available"
+    ]
+  },
+  {
+    icon: Mail,
+    title: "Email Addresses",
+    details: [
+      "lawvalley@gmail.com",
+      "lawvalleyfirm@gmail.com",
+      "info@lawvalley.com.bd"
+    ]
+  }
+];
+
 
   return (
     <section id="contact" className="py-20 bg-gradient-subtle">
@@ -202,8 +211,9 @@ const ContactSection = () => {
                 </p>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-law-gold" />
-                  <a href="tel:+8801112223333" className="text-law-gold font-semibold text-lg">
-                    +880 111 222-3333
+                  <a href="tel:+880-2222-26013" className="text-law-gold font-semibold text-lg">
+                    +880-2222-26013
+
                   </a>
                 </div>
               </CardContent>

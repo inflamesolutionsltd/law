@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, MessageCircle } from "lucide-react";
+import { Menu, X, Phone, } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,7 +45,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <a href="tel:+8801234567890" className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
               <Phone className="h-4 w-4" />
-              <span className="font-medium">+880 123 456-7890</span>
+              <span className="font-medium">+880-2222-26013</span>
             </a>
             <Button className="btn-primary">
               Book Consultation
@@ -89,15 +89,6 @@ const Header = () => {
         )}
       </div>
 
-      {/* WhatsApp Floating Button */}
-      <a
-        href="https://wa.me/8801234567890"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
-      >
-        <MessageCircle className="h-6 w-6" />
-      </a>
     </header>
   );
 };

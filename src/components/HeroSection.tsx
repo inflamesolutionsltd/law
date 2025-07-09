@@ -24,7 +24,7 @@ const HeroSection = () => {
               Trusted Legal Partner for Over 30 Years
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed animate-fade-in">
+            <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed animate-fade-in">
               Comprehensive Legal Expertise, Nationwide Reach. With expertise in the Supreme Court, 
               District Courts, and Tribunals, both in Dhaka and beyond, Law Valley provides effective 
               legal solutions tailored to support your business growth and stability.
