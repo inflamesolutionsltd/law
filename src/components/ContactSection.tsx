@@ -170,8 +170,12 @@ const ContactSection = () => {
           <MapPin className="h-12 w-12 text-law-gold mx-auto mb-2" />
           <p className="text-primary font-medium">Law Valley | Law Firm in Dhaka</p>
           <p className="text-muted-foreground text-sm">
-            Satarkul Sky View Tower, B-8/B, Block-B, Dhaka-1212
-          </p>
+  Saiham Sky View Tower, 195 Shahid Syed Nazrul Islam Sarani,<br />
+  Suite No. 11A (11th Floor), 45 Bijoy Nagar,<br />
+  Dhaka – 1000, Bangladesh
+</p>
+
+  
         </div>
       </div>
     </CardContent>
